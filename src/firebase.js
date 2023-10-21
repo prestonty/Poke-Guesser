@@ -38,7 +38,7 @@ export function retrieveFromDatabase() {
     // Initialize Firebase
     const db = initializeApp(firebaseConfig).database();
 
-    var ref = db.ref("-Nf9P_ZKzLU2pL6Z6dgp");
+    var ref = db.ref(process.env.POKEMON_GROUP_NAME);
     // you want to get a value
     // requires two callback functions, one function for when value is successfully received, and other when an error occurs
     ref.on("value", receivedData, errData);

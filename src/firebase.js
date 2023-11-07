@@ -1,54 +1,24 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//     apiKey: process.env.API_KEY,
-//     authDomain: process.env.AUTH_DOMAIN,
-//     databaseURL: process.env.DATABASE_URL,
-//     projectId: process.env.PROJECT_ID,
-//     storageBucket: process.env.STORAGE_BUCKET,
-//     messagingSenderId: process.env.MESSAGING_SENDER_ID,
-//     appId: process.env.APP_ID,
-//     measurementId: process.env.MEASUREMENT_ID,
-// };
+import { getDatabase } from "firebase/database";
 
-// // Initialize Firebase
-// export const db = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+};
 
-// all this code should be put into a function
+// Initialize Firebase
+const app = initializeApp(firebaseConfig).database;
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
 
-export function retrieveFromDatabase() {
-    const firebaseConfig = {
-        apiKey: process.env.API_KEY,
-        authDomain: process.env.AUTH_DOMAIN,
-        databaseURL: process.env.DATABASE_URL,
-        projectId: process.env.PROJECT_ID,
-        storageBucket: process.env.STORAGE_BUCKET,
-        messagingSenderId: process.env.MESSAGING_SENDER_ID,
-        appId: process.env.APP_ID,
-        measurementId: process.env.MEASUREMENT_ID,
-    };
-
-    // Initialize Firebase
-    const db = initializeApp(firebaseConfig).database();
-
-    var ref = db.ref(process.env.POKEMON_GROUP_NAME);
-    // you want to get a value
-    // requires two callback functions, one function for when value is successfully received, and other when an error occurs
-    ref.on("value", receivedData, errData);
-}
-
-function receivedData(data) {
-    console.log(data);
-}
-
-function errData(err) {
-    console.log("Error for Retrieving Data");
-    console.log(err);
-}
+// export const db = getFirestore(app);
+// export const storage = getStorage(app);

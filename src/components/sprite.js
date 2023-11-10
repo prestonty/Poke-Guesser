@@ -12,8 +12,7 @@ const Sprite = (props) => {
     );
     onValue(distanceRef, (snapshot) => {
         // take a snapshot of the item in the database (since value can possibly constantly updates)
-        const data = snapshot.val(); // get value
-        imageSrc = data;
+        imSrc = snapshot.val(); // get value
     });
 
     return (

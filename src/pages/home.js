@@ -12,7 +12,7 @@ export default function Home() {
                 <img
                     className="large-image"
                     src="/assets/images/WhoThatPokemon.jpg"
-                    alt="image"
+                    alt="Who's that Pokemon"
                 />
             </div>
             <br />

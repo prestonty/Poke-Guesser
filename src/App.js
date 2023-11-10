@@ -6,15 +6,12 @@ import Home from "./pages/home.js";
 import Guesser from "./pages/guesser.js";
 import Gallery from "./pages/gallery.js";
 
-import { useEffect, useState } from "react";
-import { db, auth } from "./firebase.js";
-
 function App() {
     const AUTH = 0;
     const HOME = 1;
     const GUESSER = 2;
     const GALLERY = 3;
-    var page = AUTH;
+    var page = GALLERY;
 
     if (page === AUTH) {
         return <Auth />;

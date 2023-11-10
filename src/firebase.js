@@ -1,8 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-
 import { getDatabase } from "firebase/database";
+// import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -16,9 +15,18 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig).database;
-export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
+const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+// const auth = getAuth(app);
+// const googleProvider = new GoogleAuthProvider();
 
-// export const db = getFirestore(app);
-// export const storage = getStorage(app);
+// export {auth, googleProvider}
+
+export { app, db };
+
+/* Steps to use firebase
+Set up configuration of database
+initialize firebase application
+initialize service
+get reference to a collection
+access collection to get data */

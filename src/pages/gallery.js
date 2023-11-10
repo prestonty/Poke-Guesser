@@ -1,3 +1,5 @@
+import Grid from "../components/grid.js";
+
 export default function Gallery() {
     return (
         <div className="gallery">
@@ -64,7 +66,8 @@ export default function Gallery() {
                 <br />
             </p>
 
-            <h3>YO INSERT THE SPRITES HERE</h3>
+            <h3>PokeDex:</h3>
+            <Grid />
         </div>
     );
 }

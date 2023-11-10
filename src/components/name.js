@@ -3,28 +3,24 @@ import React from "react";
 import { db } from "../firebase.js";
 import { ref, onValue } from "firebase/database";
 
-const Sprite = (props) => {
+const Name = (props) => {
     // pokePath is item name in database. E.g. pokemon1, pokemon2, etc.
-    let imageSrc;
+    let name;
     const distanceRef = ref(
         db,
-        "-Nf9P_ZKzLU2pL6Z6dgp/" + props.pokePath + "/image"
+        "-Nf9P_ZKzLU2pL6Z6dgp/" + props.pokePath + "/name"
     );
     onValue(distanceRef, (snapshot) => {
         // take a snapshot of the item in the database (since value can possibly constantly updates)
         const data = snapshot.val(); // get value
-        imageSrc = data;
+        name = data;
     });
 
     return (
         <div>
-            <img
-                class="sprite"
-                src={imageSrc}
-                alt="im on a whole nother level in geekin"
-            />
+            <p class="name">{name}</p>
         </div>
     );
 };
 
-export default Sprite;
+export default Name;

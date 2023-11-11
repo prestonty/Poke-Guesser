@@ -1,84 +1,80 @@
+// import whosThatPokemonImage from "/assets/images/WhoThatPokemon.jpg";
+
 export default function Home() {
     return (
-        <div className="home">
-            <h1 className="home-title">Welcome to Poke-Guesser</h1>
-            {/* this has to be huge!!! */}
-            <div>
-                <p className="large">
-                    a quiz to test your knowledge on Pokemon! Inspired by the
-                    anime's half-way segment: "Who's that Pokemon?"
-                </p>
-                {/* REACT ASSUMES ALL IMAGES ARE ALREADY IN PUBLIC FOLDER!!! */}
-                <img
-                    className="large-image"
-                    src="/assets/images/WhoThatPokemon.jpg"
-                    alt="Who's that Pokemon"
-                />
-            </div>
+        <div className="home bg-cyan font-mono mx-20">
+            <h1 className="home-title text-white text-8xl">
+                Welcome to Poke-Guesser
+            </h1>
             <br />
+            <br />
+            <br />
+            <div className="content flex content-start justify-center">
+                <div className="right mr-40">
+                    <div>
+                        <p className="text-white text-2xl">
+                            A quiz to test your knowledge on Pokemon! Inspired
+                            by the anime's half-way segment: "Who's that
+                            Pokemon?"
+                        </p>
 
-            <h2>
-                Didn't have a childhood? Fret not, I will catch you up on the
-                Pokemon lore:
-            </h2>
-            <p>
-                "Who's that Pokémon?" is a popular and recurring segment in the
-                Pokémon animated TV series, which is used to engage the
-                audience, especially younger viewers.
+                        <br />
+                        <br />
+                        <br />
+                        <p className="text-white text-lg">
+                            "Who's that Pokémon?" is a popular and recurring
+                            segment in the Pokémon animated TV series, which is
+                            used to engage the audience, especially younger
+                            viewers.
+                        </p>
+                        <br />
+                        <br />
+                        {/* REACT ASSUMES ALL IMAGES ARE ALREADY IN PUBLIC FOLDER!!! */}
+
+                        {/* ADD AN API HERE, LIKE A SPOTIFY API OR SOMETHING!!! */}
+                    </div>
+                </div>
                 <br />
-                <br />
-                Here's how the segment works:
-                <br />
-                <br />
-                Timing: The "Who's that Pokémon?" segment usually occurs once
-                per episode, typically right before or after a commercial break.
-                <br />
-                <br />
-                Narration: The segment begins with a brief introduction by the
-                show's narrator or one of the characters. The narrator's voice
-                is often used for consistency and recognition.
-                <br />
-                <br />
-                Silhouette: A silhouette or shadow of a Pokémon is displayed on
-                the screen, obscuring the creature's identity. This is done to
-                create anticipation and suspense among the viewers. Question: A
-                voiceover, often the narrator or a character, asks the question,
-                "Who's that Pokémon?" This is the cue for the audience to try
-                and guess the Pokémon's identity.
-                <br />
-                <br />
-                Commercial Break (Optional): Sometimes, the segment occurs just
-                before or after a commercial break, adding to the suspense.
-                Viewers are left wondering about the Pokémon's identity until
-                the show returns.
-                <br />
-                <br />
-                Reveal: After a short break or pause, the show returns, and the
-                silhouette is removed to reveal the Pokémon's true identity.
-                <br />
-                <br />
-                Explanation: A brief description of the revealed Pokémon is
-                provided, along with some of its characteristics or abilities.
-                This is often delivered by the narrator or one of the
-                characters.
-                <br />
-                <br />
-                Educational Element: "Who's that Pokémon?" serves an educational
-                purpose as well, introducing viewers to different Pokémon
-                species and expanding their knowledge of the Pokémon world. The
-                segment is not just a fun way to engage the audience but also
-                serves as a form of interactivity, encouraging fans to test
-                their knowledge of Pokémon by guessing the silhouette before the
-                big reveal. It has become a beloved and iconic part of the
-                Pokémon animated series, and many fans fondly remember this
-                segment from their childhood.
-            </p>
-            <br />
-            <br />
-            <p>
-                Created using React.js and FireBase. Project was started on
-                Sept. 21, 2023... And was continued on Oct. 17, 2023.
-            </p>
+
+                <div className="left text-white text-lg">
+                    <img
+                        className="large-image"
+                        src={"/assets/images/WhoThatPokemon.jpg"}
+                        width={1000}
+                        alt="Who's that Pokemon"
+                    />
+                    <br />
+                    <br />
+                    <h2 className="text-2xl">
+                        Didn't have a childhood? Fret not, I will catch you up
+                        on the Pokemon lore:
+                    </h2>
+                    <br />
+                    <p>
+                        The "Who's that Pokémon?" segment occurs once per
+                        episode, usually before or after a commercial break. It
+                        starts with a narrator introducing a Pokémon silhouette,
+                        asking viewers to guess its identity. Sometimes placed
+                        around a commercial break, the reveal follows, providing
+                        a brief description of the Pokémon and serving an
+                        educational purpose by expanding viewers' Pokémon
+                        knowledge. This segment is beloved for its interactive
+                        element, engaging fans to guess the Pokémon before its
+                        unveiling, making it an iconic part of the Pokémon
+                        animated series.
+                    </p>
+                    <br />
+                    <br />
+                    <p>
+                        Developed using React.js & Tailwind Css for the
+                        front-end and Python & FireBase for the back-end.
+                        <br />
+                        Project was started on Sept. 21, 2023... And was
+                        continued on Oct. 17... And then picked back up on Nov.
+                        10!
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }

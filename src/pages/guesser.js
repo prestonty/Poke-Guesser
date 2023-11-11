@@ -5,7 +5,7 @@ import Name from "../components/name.js";
 
 export default function Guesser() {
     return (
-        <div className="guesser">
+        <div className="guesser bg-cyan font-mono mx-20">
             <div className="quiz">
                 <Question
                     question={"This is a question"}

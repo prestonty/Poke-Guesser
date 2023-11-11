@@ -3,7 +3,7 @@ import Name from "./name.js";
 
 export default function Pokemon(props) {
     return (
-        <div>
+        <div class="">
             <Sprite pokePath={props.pokePath} />
             <Name pokePath={props.pokePath} />
         </div>

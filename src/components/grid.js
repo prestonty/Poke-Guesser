@@ -13,9 +13,11 @@ export default function Grid() {
         components.push(<Pokemon pokePath={path} key={key} index={i} />);
     }
     return (
-        <ol>
+        <ol class="items-center grid-cols-9">
             {components.map((component) => (
-                <li key={component.key}>{component}</li>
+                <li class="inline-block" key={component.key}>
+                    {component}
+                </li>
             ))}
         </ol>
     );

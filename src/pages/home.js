@@ -1,5 +1,3 @@
-// import whosThatPokemonImage from "/assets/images/WhoThatPokemon.jpg";
-
 export default function Home() {
     return (
         <div className="home bg-cyan font-mono mx-20">

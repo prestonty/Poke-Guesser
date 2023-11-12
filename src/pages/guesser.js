@@ -1,12 +1,13 @@
 import Question from "../components/question.js";
-import Button from "../components/button.js";
+import Party from "../components/party.js";
 import Sprite from "../components/sprite.js";
 import Name from "../components/name.js";
 
 export default function Guesser() {
     return (
         <div className="guesser bg-cyan font-mono mx-20">
-            <div className="quiz">
+            <Party pokePath="pokemon1" />
+            {/* <div className="quiz">
                 <Question
                     question={"This is a question"}
                     questionType="image"
@@ -15,28 +16,27 @@ export default function Guesser() {
                 <Sprite pokePath="pokemon1" />
                 <Name pokePath="pokemon1" />
                 <h2>ENDS HERE</h2>
-                {/* OH I GOTTA THEME THE OPTIONS TOWARDS THE 6 POKEMON IN YOUR PARTY!!!! */}
                 <ul>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                     <li>
-                        <Button />
+                        <Member />
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 }

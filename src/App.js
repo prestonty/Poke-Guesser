@@ -13,15 +13,12 @@ const AUTH = 1;
 const HOME = 2;
 const GUESSER = 3;
 const GALLERY = 4;
-// var page = HOME; // this should be default value
-console.log("REPEATING");
 
 // TO DO, ADD A HOOK IN REACT TO UPDATE HE PAGE. SINCE THE PROBLEM IS THAT APP() DOES NOT RUN AFTER U CLICK THE BUTTON
 // Add a link to my github and linkedin (contact me)
 
 function App() {
-    const [page, setPage] = useState(2);
-    console.log("pAGE " + page);
+    const [page, setPage] = useState(2); // default is home page
     if (page === AUTH) {
         return (
             <div className="p-5 bg-cyan">

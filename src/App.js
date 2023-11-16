@@ -21,28 +21,28 @@ function App() {
     const [page, setPage] = useState(2); // default is home page
     if (page === AUTH) {
         return (
-            <div className="p-5 bg-cyan">
+            <div className="root p-5 bg-cyan">
                 <Navbar setPage={setPage} />
                 <Auth />
             </div>
         );
     } else if (page === HOME) {
         return (
-            <div className="p-5 bg-cyan">
+            <div className="root p-5 bg-cyan">
                 <Navbar setPage={setPage} />
                 <Home />
             </div>
         );
     } else if (page === GUESSER) {
         return (
-            <div className="p-5 bg-cyan">
+            <div className="root p-5 bg-cyan">
                 <Navbar setPage={setPage} />
                 <Guesser />
             </div>
         );
     } else if (page === GALLERY) {
         return (
-            <div className="p-5 bg-cyan">
+            <div className="root p-5 bg-cyan">
                 <Navbar setPage={setPage} />
                 <Gallery />
             </div>

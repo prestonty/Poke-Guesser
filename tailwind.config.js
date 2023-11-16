@@ -22,7 +22,11 @@ module.exports = {
             pokeBlueli: "#6fc8c9",
             pokeBlueda: "#87d7d8",
         },
-        extend: {},
+        extend: {
+            animation: {
+                fadeRight1: "delay-100",
+            },
+        },
     },
     plugins: [],
 };

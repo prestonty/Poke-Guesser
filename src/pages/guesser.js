@@ -5,38 +5,20 @@ import Name from "../components/name.js";
 
 export default function Guesser() {
     return (
-        <div className="guesser bg-cyan font-mono mx-20">
+        // BORDERS ARE A HACK, I CAN VISUALIZE SO MUCH BETTER!!!
+        <div className="guesser bg-cyan font-mono mx-20 border-black border-2">
+            {/* <img className="" src="assets/images/GUI.png" alt="GUI" /> */}
+            <div
+                class="bg-contain bg-center border-white border-4"
+                style={{
+                    backgroundImage: "url('/assets/images/GUI.png')",
+                    width: "1012px",
+                    height: "814px",
+                }}
+            >
+                {/* <h1>Whats good</h1> */}
+            </div>
             <Party pokePath="pokemon1" />
-            {/* <div className="quiz">
-                <Question
-                    question={"This is a question"}
-                    questionType="image"
-                />
-                <h1>UNDER HERE</h1>
-                <Sprite pokePath="pokemon1" />
-                <Name pokePath="pokemon1" />
-                <h2>ENDS HERE</h2>
-                <ul>
-                    <li>
-                        <Member />
-                    </li>
-                    <li>
-                        <Member />
-                    </li>
-                    <li>
-                        <Member />
-                    </li>
-                    <li>
-                        <Member />
-                    </li>
-                    <li>
-                        <Member />
-                    </li>
-                    <li>
-                        <Member />
-                    </li>
-                </ul>
-            </div> */}
         </div>
     );
 }

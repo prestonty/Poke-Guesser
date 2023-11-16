@@ -1,14 +1,42 @@
 export default function Home() {
     return (
         <div className="home bg-cyan font-mono mx-20">
-            <h1 className="home-title text-white text-8xl">
+            <br />
+            <br />
+            <br />
+            <h1 className="home-title text-white text-8xl flex justify-center">
                 Welcome to Poke-Guesser
             </h1>
             <br />
             <br />
             <br />
+            <div className="content flex content-start justify-center mx-[-100px]">
+                <div
+                    class="bg-cover bg-center bg-fixed flex w-screen h-screen"
+                    style={{
+                        backgroundImage: "url('/assets/images/snorelaxbg.png')",
+                    }}
+                >
+                    <div class="left w-2/5 flex mt-40 ml-20 justify-items-start">
+                        <p class="text-midnight text-3xl indent-16">
+                            This website was inspired by the iconic "Who's that
+                            Pokémon?" TV segment occurring once per episode,
+                            usually before a commercial break.
+                            <br />
+                            <br />
+                            <br />
+                            The viewers guess the identity of a Pokémon's
+                            silhouette and after a commercial break, the reveal
+                            follows, providing a brief description of the
+                            Pokémon and serving an educational purpose by
+                            expanding viewers' knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div className="content flex content-start justify-center">
-                <div className="right mr-40">
+                {/* <div className="right mr-40">
                     <div>
                         <p className="text-white text-2xl">
                             A quiz to test your knowledge on Pokemon! Inspired
@@ -27,44 +55,24 @@ export default function Home() {
                         </p>
                         <br />
                         <br />
-                        {/* REACT ASSUMES ALL IMAGES ARE ALREADY IN PUBLIC FOLDER!!! */}
-
-                        {/* ADD AN API HERE, LIKE A SPOTIFY API OR SOMETHING!!! */}
                     </div>
-                </div>
+                </div> */}
+                {/* REACT ASSUMES ALL IMAGES ARE ALREADY IN PUBLIC FOLDER!!! */}
+
+                {/* ADD AN API HERE, LIKE A SPOTIFY API OR SOMETHING!!! */}
                 <br />
 
                 <div className="left text-white text-lg">
-                    <img
+                    {/* <img
                         className="large-image"
                         src={"/assets/images/WhoThatPokemon.jpg"}
                         width={1000}
                         alt="Who's that Pokemon"
-                    />
-                    <br />
-                    <br />
-                    <h2 className="text-2xl">
-                        Didn't have a childhood? Fret not, I will catch you up
-                        on the Pokemon lore:
-                    </h2>
-                    <br />
-                    <p>
-                        The "Who's that Pokémon?" segment occurs once per
-                        episode, usually before or after a commercial break. It
-                        starts with a narrator introducing a Pokémon silhouette,
-                        asking viewers to guess its identity. Sometimes placed
-                        around a commercial break, the reveal follows, providing
-                        a brief description of the Pokémon and serving an
-                        educational purpose by expanding viewers' Pokémon
-                        knowledge. This segment is beloved for its interactive
-                        element, engaging fans to guess the Pokémon before its
-                        unveiling, making it an iconic part of the Pokémon
-                        animated series.
-                    </p>
+                    /> */}
                     <br />
                     <br />
                     <p>
-                        Developed using React.js & Tailwind Css for the
+                        Developed using React.js & Tailwind CSS for the
                         front-end and Python & FireBase for the back-end.
                         <br />
                         Project was started on Sept. 21, 2023... And was

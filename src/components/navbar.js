@@ -26,7 +26,12 @@ export default function Navbar(props) {
                 className="flex justify-center hover:text-white transition-colors duration-300"
                 onClick={navHome}
             >
-                <img src="/assets/images/logo.png" width={100} alt="logo" />
+                <img
+                    class="hover:animate-spin"
+                    src="/assets/images/logo.png"
+                    width={100}
+                    alt="logo"
+                />
                 <p className="m-auto ml-5">PokeGuesser</p>
             </button>
             <button

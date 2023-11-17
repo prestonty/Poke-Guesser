@@ -4,9 +4,68 @@ export default function Home() {
             <br />
             <br />
             <br />
-            <h1 className="home-title text-white text-8xl flex justify-center">
-                Welcome to Poke-Guesser
-            </h1>
+            <div class="home-title text-white text-8xl flex justify-center">
+                <p class="hover:text-midnight transition-colors duration-500">
+                    W
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    E
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    L
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    C
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    O
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    M
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    E &nbsp;
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    T
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    O
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    &nbsp; P
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    O
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    K
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    E
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    G
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    U
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    E
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    S
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    S
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    E
+                </p>
+                <p class="hover:text-midnight transition-colors duration-500">
+                    R
+                </p>
+            </div>
             <br />
             <br />
             <br />
@@ -18,7 +77,7 @@ export default function Home() {
                     }}
                 >
                     <div class="left w-2/5 flex mt-40 ml-20 justify-items-start">
-                        <p class="text-midnight text-3xl indent-16">
+                        <p class="text-midnight text-xs sm:text-base md:text-xl lg:text-2xl xl:text-3xl indent-16">
                             This website was inspired by the iconic "Who's that
                             Pokémon?" TV segment occurring once per episode,
                             usually before a commercial break.

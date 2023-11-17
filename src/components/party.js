@@ -8,7 +8,7 @@ export default function Party(props) {
             {/* rectangle darkgreen */}
             {/* rectangle light green */}
             {/* pokemon sprite */}
-            <Sprite pokePath={props.pokePath} />
+            <Sprite pokePath={props.pokePath} size={props.size} />
             <Name pokePath={props.pokePath} />
             <img src="assets\images\lvl.png" width={40} />
             <img src="assets\images\hpBar.png" width={150} />

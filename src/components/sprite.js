@@ -25,10 +25,11 @@ const Sprite = (props) => {
         <div>
             {loadImage ? (
                 <LazyLoadImage
+                    // image sizes: sideLength=192 for large, sideLength=96 for small
                     className="sprite"
                     src={loadImage}
-                    width={192}
-                    height={192}
+                    width={props.size}
+                    height={props.size}
                     // effect="blur"
                     alt="im on a whole nother level in geekin"
                 />

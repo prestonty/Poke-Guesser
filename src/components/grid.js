@@ -1,6 +1,6 @@
 import Pokemon from "./pokemon.js";
 
-export default function Grid() {
+export default function Grid(props) {
     const numComponents = 649;
 
     // Generate an array of React components using a for loop
@@ -10,7 +10,9 @@ export default function Grid() {
 
         let path = "pokemon" + i;
         console.log(path);
-        components.push(<Pokemon pokePath={path} key={key} index={i} />);
+        components.push(
+            <Pokemon pokePath={path} size={props.size} key={key} index={i} />
+        );
     }
     return (
         <ol class="items-center grid-cols-9">

@@ -99,7 +99,7 @@ export default function Gallery() {
             </h3>
             <br />
             <br />
-            <Grid />
+            <Grid size={192} />
         </div>
     );
 }

@@ -1,4 +1,3 @@
-import Question from "../components/question.js";
 import Sprite from "../components/sprite.js";
 import Name from "../components/name.js";
 import GuessSprite from "../components/guessSprite.js";

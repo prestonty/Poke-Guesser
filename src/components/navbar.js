@@ -1,5 +1,3 @@
-// import { navHome, navGuesser, navGallery } from "../App.js";
-
 // Page constants
 const AUTH = 1;
 const HOME = 2;

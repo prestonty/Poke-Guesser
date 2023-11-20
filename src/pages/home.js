@@ -4,7 +4,7 @@ export default function Home() {
             <br />
             <br />
             <br />
-            <div class="home-title text-white text-8xl flex justify-center">
+            <div class="home-title text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl flex justify-center">
                 <p class="hover:text-midnight transition-colors duration-500">
                     W
                 </p>
@@ -30,10 +30,10 @@ export default function Home() {
                     T
                 </p>
                 <p class="hover:text-midnight transition-colors duration-500">
-                    O
+                    O &nbsp;
                 </p>
                 <p class="hover:text-midnight transition-colors duration-500">
-                    &nbsp; P
+                    P
                 </p>
                 <p class="hover:text-midnight transition-colors duration-500">
                     O

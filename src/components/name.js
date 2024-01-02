@@ -5,7 +5,7 @@ import { ref, onValue } from "firebase/database";
 const Name = (props) => {
     // pokePath is item name in database. E.g. pokemon1, pokemon2, etc.
     let [loadName, setLoadName] = useState(null);
-    let name;
+    // let name;
     useEffect(() => {
         const distanceRef = ref(
             db,
@@ -21,7 +21,7 @@ const Name = (props) => {
     }, [props.pokePath]);
 
     return (
-        <div className="font-mono text-center text-midnight text-lg">
+        <div className="">
             {loadName ? <p class="name">{loadName}</p> : <p>Loading</p>}
         </div>
     );

@@ -26,6 +26,9 @@ module.exports = {
             animation: {
                 fadeRight1: "delay-100",
             },
+            spacing: {
+                '22':'5.1rem',
+            },
         },
     },
     plugins: [],

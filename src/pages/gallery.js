@@ -3,23 +3,15 @@ import Grid from "../components/grid.js";
 export default function Gallery() {
     return (
         <div className="gallery bg-cyan font-mono mx-20">
-            <h1 className="title text-white text-8xl">Pokemon Gallery</h1>
+            <h1 className="title text-midnight text-center text-8xl">Pokemon Gallery</h1>
             <br />
-            <p className="text text-white text-lg text-3xl">
+            <p className="text text-midnight text-center text-lg text-3xl">
                 This is a gallery of all the Pokemon sprites used in this app.
             </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2 className="sub-title text-white text-5xl">
+            <h2 className="sub-title text-midnight text-center text-5xl mt-20">
                 Brief History of 2D Sprites
             </h2>
-            <p className="text-white text-lg">
+            <p className="text-midnight text-lg">
                 2D sprites have played a significant role in the history of
                 Pokémon, as they were the primary graphical representation of
                 Pokémon in the early games. Here's a brief history of 2D sprites
@@ -94,8 +86,8 @@ export default function Gallery() {
             <br />
             <br />
 
-            <h3 className="text-white text-8xl text-center underline">
-                PokeDex:
+            <h3 className="text-midnight text-8xl text-center">
+                The National PokeDex
             </h3>
             <br />
             <br />

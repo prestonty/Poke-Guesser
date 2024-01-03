@@ -10,7 +10,7 @@ export default function Guesser() {
 
     return (
         // BORDERS ARE A HACK, I CAN VISUALIZE SO MUCH BETTER!!!
-        <div className="guesser bg-cyan font-mono mx-20 border-black border-2">
+        <div className="guesser bg-cyan font-mono mx-20 flex flex-row justify-center items-center">
             <div
                 class="bg-contain bg-center border-white border-4"
                 style={{
